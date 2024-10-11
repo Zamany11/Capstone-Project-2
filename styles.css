@@ -1,0 +1,176 @@
+body {
+    background-color: whitesmoke;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: aliceblue;
+    font-size: larger;
+}
+
+.profile-container h1 {
+    font-size: 4rem;
+}
+
+.profile-container p {
+    color: blue;
+    font-family: "Oswald",;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: "Oswald", serif;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.profile-image {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 5px solid blue;
+}
+
+.logo {
+    background-color: black;
+    align-items: center;
+}
+
+.body-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.body-container p {
+    font-family: "Afacad Flux", sans-serif;
+    font-size: 20px;
+}
+
+.education {
+    grid-row-start: 2;
+}
+
+.body {
+    background-color:white;
+    border-radius: 20px;
+}
+
+.item {
+    list-style: circle;
+    padding: 2px;
+    margin: 10px;
+}
+
+.blue {
+    color: blue;
+    font-weight: bolder;
+}
+
+.red {
+    color: red;
+}
+
+.school {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.date {
+    color: rgb(61, 53, 53);
+    font-size: 13px;
+}
+
+.highlight {
+    background-color: rgb(226, 214, 199);
+}
+
+.background {
+    grid-column-start: span 2;
+    text-align: center;
+    line-height: 35px;
+}
+
+.head {
+    background-color: black;
+}
+
+@media (max-width: 1000px) {
+    .body-container {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .design {
+        width: 100px;
+    }
+
+    .expertise {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .bar {
+        display: none;
+    }
+
+    .profile-image {
+        height: 250px;
+        width: 250px;
+    }
+
+    .small {
+        display: none;
+    }
+}
+
+@media (min-width:500px) {
+    .big {
+        display: none;
+    }
+}
+
+.skills {
+    margin: 30px;
+}
+
+.expertise {
+    display: flex;
+    flex: 1;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.design {
+    height: 100px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    height: 70px;
+    margin-top: 70px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
